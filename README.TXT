@@ -4,9 +4,9 @@ Tell the reader (someone who does not know anything about this project)
 
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
+PROJECT TITLE:Banking system OOPS
 PURPOSE OF PROJECT:
-VERSION or DATE:
+VERSION or DATE: 1 
 HOW TO START THIS PROJECT:
-AUTHORS:
+AUTHORS: Sajin Raj Amatya
 USER INSTRUCTIONS:
