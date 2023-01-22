@@ -5,13 +5,13 @@
  * @author (SajinRajAmatya_AI1)
  * @version (a version number or a date)
  */
-public class Bankcard   // Main class name Bankcard is created
+public class Bankcard   // Parent  class name Bankcard is created
 {
-    private int balance_Amount ;     //private variable  balance_amount is declared 
-    private int card_Id;            // private variable card_id is declared
-    private String issuer_Bank;     // private variable issuer_bank is declared
-    private String client_Name;     // private variable client_name is declared
-    private String bank_Account;    // private variable bank_account is declared
+    private int balance_Amount ;        // instance variable with a private access modifier is declared 
+    private int card_Id;            
+    private String issuer_Bank;     
+    private String client_Name;     
+    private String bank_Account;    
 
     public Bankcard(int balance_Amount, int card_Id, String issuer_Bank, String bank_Account){    //parameterized constructor with 4 parameter 
         this.balance_Amount = balance_Amount;  // this keyword is used for invoking the current constructor Bankcard of a class
@@ -21,39 +21,39 @@ public class Bankcard   // Main class name Bankcard is created
         this.bank_Account = bank_Account;
     }
 
-    public  int getBalance_Amount(){ //accessor method for balanceamount
+    public  int getBalance_Amount(){ //accessor method for balanceamount attribute 
 
         return this.balance_Amount;
     }
 
-    public int  getCard_Id(){ //accessor method for card_Id
+    public int  getCard_Id(){ //accessor method for card_Id attribute 
 
         return this.card_Id;
 
     }
 
-    public  String getIssuer_Bank(){ // accessor method for 
+    public  String getIssuer_Bank(){ // accessor method for issuer_Bank attribute 
 
         return this.issuer_Bank;
     }
 
-    public  String getClient_Name(){
+    public  String getClient_Name(){    // accessor method for client_Name attribute 
 
         return this.client_Name;
     } 
 
-    public  String getBank_Account(){
+    public  String getBank_Account(){     // accessor method for bank_Account attribute 
 
         return this.bank_Account; 
 
     }
 
-    public void setBalance_Amount(int balance_Amount){  //setter or mutator  method accessor for balance amount 
+    public void setBalance_Amount(int balance_Amount){  //setter or mutator  method accessor for balance_Amount attribute
         this.balance_Amount = balance_Amount;
 
     }
 
-    public void setClient_Name(String client_Name){     //setter or mutator  method accessor for client name
+    public void setClient_Name(String client_Name){     //setter or mutator  method accessor for client_Name attribute 
         this.client_Name=client_Name;
     }
 
