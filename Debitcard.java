@@ -8,14 +8,14 @@
  */
 public class Debitcard extends Bankcard  //subclass Debitcard is created which inherit the property of Bankcard
 {
-    private int pin_Number;    
+    private int pin_Number;             // instance variable with a private access modifier is declared 
     private String date_Of_Withdrawal;
     private int withdrawal_Amount;
     private boolean has_Withdrawn;
-
-    public Debitcard(int balance_Amount, int card_Id, String bank_Account,String issuer_Bank, String client_Name,int pin_Number){  //constructor 
-        super(balance_Amount, card_Id, issuer_Bank, bank_Account);
-        super.setClient_Name(client_Name);
+                                                                                                    // parameterised constructor of Debitcard 
+    public Debitcard(int balance_Amount, int card_Id, String bank_Account,String issuer_Bank, String client_Name,int pin_Number){  
+        super(balance_Amount, card_Id, issuer_Bank, bank_Account);      // calling the constructor of superclass Bankcard 
+        super.setClient_Name(client_Name);                      // calling the mutator method  of superclass Bankcard 
         this.pin_Number = pin_Number;
         this.has_Withdrawn=false;
 
