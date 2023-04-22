@@ -1,0 +1,457 @@
+index,Year,Gender,Race,Director(s),Film,Nomination/Winner
+0,1927/28 ,Male,White,Frank Borzage (Dramatic Picture),7th Heaven,Winner
+1,1927/28 ,Male,White,Herbert Brenon(Dramatic Picture),Sorrell and Son,Nomination
+2,1927/28 ,Male,White,King Vidor(Dramatic Picture),The Crowd,Nomination
+3,1927/28 ,Male,White,Lewis Milestone (Comedy Picture),Two Arabian Knights,Winner
+4,1927/28 ,Male,White,Ted Wilde(Comedy Picture),Speedy,Nomination
+5,1928/1929,Male,White,Frank Lloyd,The Divine Lady,Winner
+6,1928/1929,Male,White,Lionel Barrymore,Madame X,Nomination
+7,1928/1929,Male,White,Harry Beaumont,The Broadway Melody,Nomination
+8,1928/1929,Male,White,Irving Cummings,In Old Arizona,Nomination
+9,1928/1929,Male,White,Frank Lloyd,Drag,Nomination
+10,1928/1929,Male,White,Frank Lloyd,Weary River,Nomination
+11,1928/1929,Male,White,Ernst Lubitsch,The Patriot,Nomination
+12,1929/1930,Male,White,Lewis Milestone,All Quiet on the Western Front,Winner
+13,1929/1930,Male,White,Clarence Brown,Anna Christie,Nomination
+14,1929/1930,Male,White,Clarence Brown,Romance,Nomination
+15,1929/1930,Male,White,Robert Z. Leonard,The Divorcee,Nomination
+16,1929/1930,Male,White,Ernst Lubitsch,The Love Parade,Nomination
+17,1929/1930,Male,White,King Vidor,Hallelujah!,Nomination
+18,1930/1931,Male,White,Norman Taurog,Skippy,Winner
+19,1930/1931,Male,White,Clarence Brown,A Free Soul,Nomination
+20,1930/1931,Male,White,Lewis Milestone,The Front Page,Nomination
+21,1930/1931,Male,White,Wesley Ruggles,Cimarron,Nomination
+22,1930/1931,Male,White,Josef von Sternberg,Morocco,Nomination
+23,1931/1932,Male,White,Frank Borzage,Bad Girl,Winner
+24,1931/1932,Male,White,King Vidor,The Champ,Nomination
+25,1931/1932,Male,White,Josef von Sternberg,Shanghai Express,Nomination
+26,1932/1933,Male,White,Frank Lloyd,Cavalcade,Winner
+27,1932/1933,Male,White,Frank Capra,Lady for a Day,Nomination
+28,1932/1933,Male,White,George Cukor,Little Women,Nomination
+29,1934,Male,White,Frank Capra,It Happened One Night,Winner
+30,1934,Male,White,Victor Schertzinger,One Night of Love,Nomination
+31,1934,Male,White,W. S. Van Dyke,The Thin Man,Nomination
+32,1935,Male,White,John Ford,The Informer,Winner
+33,1935,Male,White,Henry Hathaway,The Lives of a Bengal Lancer,Nomination
+34,1935,Male,White,Frank Lloyd,Mutiny on the Bounty,Nomination
+35,1936,Male,White,Frank Capra,Mr. Deeds Goes to Town,Winner
+36,1936,Male,White,Gregory La Cava,My Man Godfrey,Nomination
+37,1936,Male,White,Robert Z. Leonard,The Great Ziegfeld,Nomination
+38,1936,Male,White,W. S. Van Dyke,San Francisco,Nomination
+39,1936,Male,White,William Wyler,Dodsworth,Nomination
+40,1937,Male,White,Leo McCarey,The Awful Truth,Winner
+41,1937,Male,White,William Dieterle,The Life of Emile Zola,Nomination
+42,1937,Male,White,Sidney Franklin,The Good Earth,Nomination
+43,1937,Male,White,Gregory La Cava,Stage Door,Nomination
+44,1937,Male,White,William A. Wellman,A Star Is Born,Nomination
+45,1938,Male,White,Frank Capra,You Can't Take It with You,Winner
+46,1938,Male,White,Michael Curtiz,Angels with Dirty Faces,Nomination
+47,1938,Male,White,Michael Curtiz,Four Daughters,Nomination
+48,1938,Male,White,Norman Taurog,Boys Town,Nomination
+49,1938,Male,White,King Vidor,The Citadel,Nomination
+50,1939,Male,White,Victor Fleming,Gone with the Wind,Winner
+51,1939,Male,White,Frank Capra,Mr. Smith Goes to Washington,Nomination
+52,1939,Male,White,John Ford,Stagecoach,Nomination
+53,1939,Male,White,Sam Wood,"Goodbye, Mr. Chips",Nomination
+54,1939,Male,White,William Wyler,Wuthering Heights,Nomination
+55,1940,Male,White,John Ford,The Grapes of Wrath,Winner
+56,1940,Male,White,George Cukor,The Philadelphia Story,Nomination
+57,1940,Male,White,Alfred Hitchcock,Rebecca,Nomination
+58,1940,Male,White,Sam Wood,Kitty Foyle,Nomination
+59,1940,Male,White,William Wyler,The Letter,Nomination
+60,1941,Male,White,John Ford,How Green Was My Valley,Winner
+61,1941,Male,White,Alexander Hall,Here Comes Mr. Jordan,Nomination
+62,1941,Male,White,Howard Hawks,Sergeant York,Nomination
+63,1941,Male,White,Orson Welles,Citizen Kane,Nomination
+64,1941,Male,White,William Wyler,The Little Foxes,Nomination
+65,1942,Male,White,William Wyler,Mrs. Miniver,Winner
+66,1942,Male,White,Michael Curtiz,Yankee Doodle Dandy,Nomination
+67,1942,Male,White,John Farrow,Wake Island,Nomination
+68,1942,Male,White,Mervyn LeRoy,Random Harvest,Nomination
+69,1942,Male,White,Sam Wood,Kings Row,Nomination
+70,1943,Male,White,Michael Curtiz,Casablanca,Winner
+71,1943,Male,White,Clarence Brown,The Human Comedy,Nomination
+72,1943,Male,White,Henry King,The Song of Bernadette,Nomination
+73,1943,Male,White,Ernst Lubitsch,Heaven Can Wait,Nomination
+74,1943,Male,White,George Stevens,The More the Merrier,Nomination
+75,1944,Male,White,Leo McCarey,Going My Way,Winner
+76,1944,Male,White,Alfred Hitchcock,Lifeboat,Nomination
+77,1944,Male,White,Henry King,Wilson,Nomination
+78,1944,Male,White,Otto Preminger,Laura,Nomination
+79,1944,Male,White,Billy Wilder,Double Indemnity,Nomination
+80,1945,Male,White,Billy Wilder,The Lost Weekend,Winner
+81,1945,Male,White,Clarence Brown,National Velvet,Nomination
+82,1945,Male,White,Alfred Hitchcock,Spellbound,Nomination
+83,1945,Male,White,Leo McCarey,The Bells of St. Mary's,Nomination
+84,1945,Male,White,Jean Renoir,The Southerner,Nomination
+85,1946,Male,White,William Wyler,The Best Years of Our Lives,Winner
+86,1946,Male,White,Clarence Brown,The Yearling,Nomination
+87,1946,Male,White,Frank Capra,It's a Wonderful Life,Nomination
+88,1946,Male,White,David Lean,Brief Encounter,Nomination
+89,1946,Male,White,Robert Siodmak,The Killers,Nomination
+90,1947,Male,White,Elia Kazan,Gentleman's Agreement,Winner
+91,1947,Male,White,George Cukor,A Double Life,Nomination
+92,1947,Male,White,Edward Dmytryk,Crossfire,Nomination
+93,1947,Male,White,Henry Koster,The Bishop's Wife,Nomination
+94,1947,Male,White,David Lean,Great Expectations,Nomination
+95,1948,Male,White,John Huston,The Treasure of the Sierra Madre,Winner
+96,1948,Male,White,Anatole Litvak,The Snake Pit,Nomination
+97,1948,Male,White,Jean Negulesco,Johnny Belinda,Nomination
+98,1948,Male,White,Laurence Olivier,Hamlet,Nomination
+99,1948,Male,White,Fred Zinnemann,The Search,Nomination
+100,1949,Male,White,Joseph L. Mankiewicz,A Letter to Three Wives,Winner
+101,1949,Male,White,Carol Reed,The Fallen Idol,Nomination
+102,1949,Male,White,Robert Rossen,All the King's Men,Nomination
+103,1949,Male,White,William A. Wellman,Battleground,Nomination
+104,1949,Male,White,William Wyler,The Heiress,Nomination
+105,1950,Male,White,Joseph L. Mankiewicz,All About Eve,Winner
+106,1950,Male,White,George Cukor,Born Yesterday,Nomination
+107,1950,Male,White,John Huston,The Asphalt Jungle,Nomination
+108,1950,Male,White,Carol Reed,The Third Man,Nomination
+109,1950,Male,White,Billy Wilder,Sunset Boulevard,Nomination
+110,1951,Male,White,George Stevens,A Place in the Sun,Winner
+111,1951,Male,White,John Huston,The African Queen,Nomination
+112,1951,Male,White,Elia Kazan,A Streetcar Named Desire,Nomination
+113,1951,Male,White,Vincente Minnelli,An American in Paris,Nomination
+114,1951,Male,White,William Wyler,Detective Story,Nomination
+115,1952,Male,White,John Ford,The Quiet Man,Winner
+116,1952,Male,White,Cecil B. DeMille,The Greatest Show on Earth,Nomination
+117,1952,Male,White,John Huston,Moulin Rouge,Nomination
+118,1952,Male,White,Joseph L. Mankiewicz,5 Fingers,Nomination
+119,1952,Male,White,Fred Zinnemann,High Noon,Nomination
+120,1953,Male,White,Fred Zinnemann,From Here to Eternity,Winner
+121,1953,Male,White,George Stevens,Shane,Nomination
+122,1953,Male,White,Charles Walters,Lili,Nomination
+123,1953,Male,White,Billy Wilder,Stalag 17,Nomination
+124,1953,Male,White,William Wyler,Roman Holiday,Nomination
+125,1954,Male,White,Elia Kazan,On the Waterfront,Winner
+126,1954,Male,White,Alfred Hitchcock,Rear Window,Nomination
+127,1954,Male,White,George Seaton,The Country Girl,Nomination
+128,1954,Male,White,William A. Wellman,The High and the Mighty,Nomination
+129,1954,Male,White,Billy Wilder,Sabrina,Nomination
+130,1955,Male,White,Delbert Mann,Marty,Winner
+131,1955,Male,White,Elia Kazan,East of Eden,Nomination
+132,1955,Male,White,David Lean,Summertime,Nomination
+133,1955,Male,White,Joshua Logan,Picnic,Nomination
+134,1955,Male,White,John Sturges,Bad Day at Black Rock,Nomination
+135,1956,Male,White,George Stevens,Giant,Winner
+136,1956,Male,White,Michael Anderson,Around the World in 80 Days,Nomination
+137,1956,Male,White,Walter Lang,The King and I,Nomination
+138,1956,Male,White,King Vidor,War and Peace,Nomination
+139,1956,Male,White,William Wyler,Friendly Persuasion,Nomination
+140,1957,Male,White,David Lean,The Bridge on the River Kwai,Winner
+141,1957,Male,White,Joshua Logan,Sayonara,Nomination
+142,1957,Male,White,Sidney Lumet,12 Angry Men,Nomination
+143,1957,Male,White,Mark Robson,Peyton Place,Nomination
+144,1957,Male,White,Billy Wilder,Witness for the Prosecution,Nomination
+145,1958,Male,White,Vincente Minnelli,Gigi,Winner
+146,1958,Male,White,Richard Brooks,Cat on a Hot Tin Roof,Nomination
+147,1958,Male,White,Stanley Kramer,The Defiant Ones,Nomination
+148,1958,Male,White,Mark Robson,The Inn of the Sixth Happiness,Nomination
+149,1958,Male,White,Robert Wise,I Want to Live!,Nomination
+150,1959,Male,White,William Wyler,Ben-Hur,Winner
+151,1959,Male,White,Jack Clayton,Room at the Top,Nomination
+152,1959,Male,White,George Stevens,The Diary of Anne Frank,Nomination
+153,1959,Male,White,Billy Wilder,Some Like It Hot,Nomination
+154,1959,Male,White,Fred Zinnemann,The Nun's Story,Nomination
+155,1960,Male,White,Billy Wilder,The Apartment,Winner
+156,1960,Male,White,Jack Cardiff,Sons and Lovers,Nomination
+157,1960,Male,White,Jules Dassin,Never on Sunday,Nomination
+158,1960,Male,White,Alfred Hitchcock,Psycho,Nomination
+159,1960,Male,White,Fred Zinnemann,The Sundowners,Nomination
+160,1961,Male,White,Robert Wise & Jerome Robbins,West Side Story,Winner
+161,1961,Male,White,Federico Fellini,La Dolce Vita,Nomination
+162,1961,Male,White,Stanley Kramer,Judgment at Nuremberg,Nomination
+163,1961,Male,White,Robert Rossen,The Hustler,Nomination
+164,1961,Male,White,J. Lee Thompson,The Guns of Navarone,Nomination
+165,1962,Male,White,David Lean,Lawrence of Arabia,Winner
+166,1962,Male,White,Pietro Germi,Divorce Italian Style,Nomination
+167,1962,Male,White,Robert Mulligan,To Kill a Mockingbird,Nomination
+168,1962,Male,White,Arthur Penn,The Miracle Worker,Nomination
+169,1962,Male,White,Frank Perry,David and Lisa,Nomination
+170,1963,Male,White,Tony Richardson,Tom Jones,Winner
+171,1963,Male,White,Federico Fellini,8½,Nomination
+172,1963,Male,White,Elia Kazan,America America,Nomination
+173,1963,Male,White,Otto Preminger,The Cardinal,Nomination
+174,1963,Male,White,Martin Ritt,Hud,Nomination
+175,1964,Male,White,George Cukor,My Fair Lady,Winner
+176,1964,Male,White,Michael Cacoyannis,Zorba the Greek,Nomination
+177,1964,Male,White,Peter Glenville,Becket,Nomination
+178,1964,Male,White,Stanley Kubrick,Dr. Strangelove,Nomination
+179,1964,Male,White,Robert Stevenson,Mary Poppins,Nomination
+180,1965,Male,White,Robert Wise,The Sound of Music,Winner
+181,1965,Male,White,David Lean,Doctor Zhivago,Nomination
+182,1965,Male,White,John Schlesinger,Darling,Nomination
+183,1965,Male,White,Hiroshi Teshigahara,Woman in the Dunes,Nomination
+184,1965,Male,White,William Wyler,The Collector,Nomination
+185,1966,Male,White,Fred Zinnemann,A Man for All Seasons,Winner
+186,1966,Male,White,Michelangelo Antonioni,Blowup,Nomination
+187,1966,Male,White,Richard Brooks,The Professionals,Nomination
+188,1966,Male,White,Claude Lelouch,A Man and a Woman,Nomination
+189,1966,Male,White,Mike Nichols,Who's Afraid of Virginia Woolf?,Nomination
+190,1967,Male,White,Mike Nichols,The Graduate,Winner
+191,1967,Male,White,Richard Brooks,In Cold Blood,Nomination
+192,1967,Male,White,Norman Jewison,In the Heat of the Night,Nomination
+193,1967,Male,White,Stanley Kramer,Guess Who's Coming to Dinner,Nomination
+194,1967,Male,White,Arthur Penn,Bonnie and Clyde,Nomination
+195,1968,Male,White,Carol Reed,Oliver!,Winner
+196,1968,Male,White,Anthony Harvey,The Lion in Winter,Nomination
+197,1968,Male,White,Stanley Kubrick,2001: A Space Odyssey,Nomination
+198,1968,Male,White,Gillo Pontecorvo,The Battle of Algiers,Nomination
+199,1968,Male,White,Franco Zeffirelli,Romeo and Juliet,Nomination
+200,1969,Male,White,John Schlesinger,Midnight Cowboy,Winner
+201,1969,Male,White,Costa-Gavras,Z,Nomination
+202,1969,Male,White,George Roy Hill,Butch Cassidy and the Sundance Kid,Nomination
+203,1969,Male,White,Arthur Penn,Alice's Restaurant,Nomination
+204,1969,Male,White,Sydney Pollack,"They Shoot Horses, Don't They?",Nomination
+205,1970,Male,White,Franklin J. Schaffner,Patton,Winner
+206,1970,Male,White,Robert Altman,M*A*S*H,Nomination
+207,1970,Male,White,Federico Fellini,Fellini Satyricon,Nomination
+208,1970,Male,White,Arthur Hiller,Love Story,Nomination
+209,1970,Male,White,Ken Russell,Women in Love,Nomination
+210,1971,Male,White,William Friedkin,The French Connection,Winner
+211,1971,Male,White,Peter Bogdanovich,The Last Picture Show,Nomination
+212,1971,Male,White,Norman Jewison,Fiddler on the Roof,Nomination
+213,1971,Male,White,Stanley Kubrick,A Clockwork Orange,Nomination
+214,1971,Male,White,John Schlesinger,Sunday Bloody Sunday,Nomination
+215,1972,Male,White,Bob Fosse,Cabaret,Winner
+216,1972,Male,White,John Boorman,Deliverance,Nomination
+217,1972,Male,White,Francis Ford Coppola,The Godfather,Nomination
+218,1972,Male,White,Joseph L. Mankiewicz,Sleuth,Nomination
+219,1972,Male,White,Jan Troell,The Emigrants,Nomination
+220,1973,Male,White,George Roy Hill,The Sting,Winner
+221,1973,Male,White,Ingmar Bergman,Cries and Whispers,Nomination
+222,1973,Male,White,Bernardo Bertolucci,Last Tango in Paris,Nomination
+223,1973,Male,White,William Friedkin,The Exorcist,Nomination
+224,1973,Male,White,George Lucas,American Graffiti,Nomination
+225,1974,Male,White,Francis Ford Coppola,The Godfather Part II,Winner
+226,1974,Male,White,John Cassavetes,A Woman Under the Influence,Nomination
+227,1974,Male,White,Bob Fosse,Lenny,Nomination
+228,1974,Male,White,Roman Polanski,Chinatown,Nomination
+229,1974,Male,White,François Truffaut,Day for Night,Nomination
+230,1975,Male,White,Miloš Forman,One Flew Over the Cuckoo's Nest,Winner
+231,1975,Male,White,Robert Altman,Nashville,Nomination
+232,1975,Male,White,Federico Fellini,Amarcord,Nomination
+233,1975,Male,White,Stanley Kubrick,Barry Lyndon,Nomination
+234,1975,Male,White,Sidney Lumet,Dog Day Afternoon,Nomination
+235,1976,Male,White,John G. Avildsen,Rocky,Winner
+236,1976,Male,White,Ingmar Bergman,Face to Face,Nomination
+237,1976,Male,White,Sidney Lumet,Network,Nomination
+238,1976,Male,White,Alan J. Pakula,All the President's Men,Nomination
+239,1976,Female,White,Lina Wertmüller,Seven Beauties,Nomination
+240,1977,Male,White,Woody Allen,Annie Hall,Winner
+241,1977,Male,White,George Lucas,Star Wars,Nomination
+242,1977,Male,White,Herbert Ross,The Turning Point,Nomination
+243,1977,Male,White,Steven Spielberg,Close Encounters of the Third Kind,Nomination
+244,1977,Male,White,Fred Zinnemann,Julia,Nomination
+245,1978,Male,White,Michael Cimino,The Deer Hunter,Winner
+246,1978,Male,White,Woody Allen,Interiors,Nomination
+247,1978,Male,White,Hal Ashby,Coming Home,Nomination
+248,1978,Male,White,Warren Beatty & Buck Henry,Heaven Can Wait,Nomination
+249,1978,Male,White,Alan Parker,Midnight Express,Nomination
+250,1979,Male,White,Robert Benton,Kramer vs. Kramer,Winner
+251,1979,Male,White,Francis Ford Coppola,Apocalypse Now,Nomination
+252,1979,Male,White,Bob Fosse,All That Jazz,Nomination
+253,1979,Male,White,Édouard Molinaro,La Cage aux Folles,Nomination
+254,1979,Male,White,Peter Yates,Breaking Away,Nomination
+255,1980,Male,White,Robert Redford,Ordinary People,Winner
+256,1980,Male,White,David Lynch,The Elephant Man,Nomination
+257,1980,Male,White,Roman Polanski,Tess,Nomination
+258,1980,Male,White,Richard Rush,The Stunt Man,Nomination
+259,1980,Male,White,Martin Scorsese,Raging Bull,Nomination
+260,1981,Male,White,Warren Beatty,Reds,Winner
+261,1981,Male,White,Hugh Hudson,Chariots of Fire,Nomination
+262,1981,Male,White,Louis Malle,Atlantic City,Nomination
+263,1981,Male,White,Mark Rydell,On Golden Pond,Nomination
+264,1981,Male,White,Steven Spielberg,Raiders of the Lost Ark,Nomination
+265,1982,Male,White,Richard Attenborough,Gandhi,Winner
+266,1982,Male,White,Sidney Lumet,The Verdict,Nomination
+267,1982,Male,White,Wolfgang Petersen,Das Boot,Nomination
+268,1982,Male,White,Sydney Pollack,Tootsie,Nomination
+269,1982,Male,White,Steven Spielberg,E.T. the Extra-Terrestrial,Nomination
+270,1983,Male,White,James L. Brooks,Terms of Endearment,Winner
+271,1983,Male,White,Bruce Beresford,Tender Mercies,Nomination
+272,1983,Male,White,Ingmar Bergman,Fanny and Alexander,Nomination
+273,1983,Male,White,Mike Nichols,Silkwood,Nomination
+274,1983,Male,White,Peter Yates,The Dresser,Nomination
+275,1984,Male,White,Miloš Forman,Amadeus,Winner
+276,1984,Male,White,Woody Allen,Broadway Danny Rose,Nomination
+277,1984,Male,White,Robert Benton,Places in the Heart,Nomination
+278,1984,Male,White,Roland Joffé,The Killing Fields,Nomination
+279,1984,Male,White,David Lean,A Passage to India,Nomination
+280,1985,Male,White,Sydney Pollack,Out of Africa,Winner
+281,1985,Male,White,Héctor Babenco,Kiss of the Spider Woman,Nomination
+282,1985,Male,White,John Huston,Prizzi's Honor,Nomination
+283,1985,Male,White,Akira Kurosawa,Ran,Nomination
+284,1985,Male,White,Peter Weir,Witness,Nomination
+285,1986,Male,White,Oliver Stone,Platoon,Winner
+286,1986,Male,White,Woody Allen,Hannah and Her Sisters,Nomination
+287,1986,Male,White,James Ivory,A Room with a View,Nomination
+288,1986,Male,White,Roland Joffé,The Mission,Nomination
+289,1986,Male,White,David Lynch,Blue Velvet,Nomination
+290,1987,Male,White,Bernardo Bertolucci,The Last Emperor,Winner
+291,1987,Male,White,John Boorman,Hope and Glory,Nomination
+292,1987,Male,White,Lasse Hallström,My Life as a Dog,Nomination
+293,1987,Male,White,Norman Jewison,Moonstruck,Nomination
+294,1987,Male,White,Adrian Lyne,Fatal Attraction,Nomination
+295,1988,Male,White,Barry Levinson,Rain Man,Winner
+296,1988,Male,White,Charles Crichton,A Fish Called Wanda,Nomination
+297,1988,Male,White,Mike Nichols,Working Girl,Nomination
+298,1988,Male,White,Alan Parker,Mississippi Burning,Nomination
+299,1988,Male,White,Martin Scorsese,The Last Temptation of Christ,Nomination
+300,1989,Male,White,Oliver Stone,Born on the Fourth of July,Winner
+301,1989,Male,White,Woody Allen,Crimes and Misdemeanors,Nomination
+302,1989,Male,White,Kenneth Branagh,Henry V,Nomination
+303,1989,Male,White,Jim Sheridan,My Left Foot,Nomination
+304,1989,Male,White,Peter Weir,Dead Poets Society,Nomination
+305,1990,Male,White,Kevin Costner,Dances with Wolves,Winner
+306,1990,Male,White,Francis Ford Coppola,The Godfather Part III,Nomination
+307,1990,Male,White,Stephen Frears,The Grifters,Nomination
+308,1990,Male,White,Barbet Schroeder,Reversal of Fortune,Nomination
+309,1990,Male,White,Martin Scorsese,Goodfellas,Nomination
+310,1991,Male,White,Jonathan Demme,The Silence of the Lambs,Winner
+311,1991,Male,White,Barry Levinson,Bugsy,Nomination
+312,1991,Male,White,Ridley Scott,Thelma & Louise,Nomination
+313,1991,Male,Black,John Singleton,Boyz n the Hood,Nomination
+314,1991,Male,White,Oliver Stone,JFK,Nomination
+315,1992,Male,White,Clint Eastwood,Unforgiven,Winner
+316,1992,Male,White,Robert Altman,The Player,Nomination
+317,1992,Male,White,Martin Brest,Scent of a Woman,Nomination
+318,1992,Male,White,James Ivory,Howards End,Nomination
+319,1992,Male,White,Neil Jordan,The Crying Game,Nomination
+320,1993,Male,White,Steven Spielberg,Schindler's List,Winner
+321,1993,Male,White,Robert Altman,Short Cuts,Nomination
+322,1993,Female,White,Jane Campion,The Piano,Nomination
+323,1993,Male,White,James Ivory,The Remains of the Day,Nomination
+324,1993,Male,White,Jim Sheridan,In the Name of the Father,Nomination
+325,1994,Male,White,Robert Zemeckis,Forrest Gump,Winner
+326,1994,Male,White,Woody Allen,Bullets over Broadway,Nomination
+327,1994,Male,White,Krzysztof Kieślowski,Three Colours: Red,Nomination
+328,1994,Male,White,Robert Redford,Quiz Show,Nomination
+329,1994,Male,White,Quentin Tarantino,Pulp Fiction,Nomination
+330,1995,Male,White,Mel Gibson,Braveheart,Winner
+331,1995,Male,White,Mike Figgis,Leaving Las Vegas,Nomination
+332,1995,Male,White,Chris Noonan,Babe,Nomination
+333,1995,Male,White,Michael Radford,Il Postino: The Postman,Nomination
+334,1995,Male,White,Tim Robbins,Dead Man Walking,Nomination
+335,1996,Male,White,Anthony Minghella,The English Patient,Winner
+336,1996,Male,White,Joel Coen,Fargo,Nomination
+337,1996,Male,White,Miloš Forman,The People vs. Larry Flynt,Nomination
+338,1996,Male,White,Scott Hicks,Shine,Nomination
+339,1996,Male,White,Mike Leigh,Secrets & Lies,Nomination
+340,1997,Male,White,James Cameron,Titanic,Winner
+341,1997,Male,White,Peter Cattaneo,The Full Monty,Nomination
+342,1997,Male,White,Atom Egoyan,The Sweet Hereafter,Nomination
+343,1997,Male,White,Curtis Hanson,L.A. Confidential,Nomination
+344,1997,Male,White,Gus Van Sant,Good Will Hunting,Nomination
+345,1998,Male,White,Steven Spielberg,Saving Private Ryan,Winner
+346,1998,Male,White,Roberto Benigni,Life Is Beautiful,Nomination
+347,1998,Male,White,John Madden,Shakespeare in Love,Nomination
+348,1998,Male,White,Terrence Malick,The Thin Red Line,Nomination
+349,1998,Male,White,Peter Weir,The Truman Show,Nomination
+350,1999,Male,White,Sam Mendes,American Beauty,Winner
+351,1999,Male,White,Lasse Hallström,The Cider House Rules,Nomination
+352,1999,Male,White,Spike Jonze,Being John Malkovich,Nomination
+353,1999,Male,White,Michael Mann,The Insider,Nomination
+354,1999,Male,White,M. Night Shyamalan,The Sixth Sense,Nomination
+355,2000,Male,White,Steven Soderbergh,Traffic,Winner
+356,2000,Male,White,Stephen Daldry,Billy Elliot,Nomination
+357,2000,Male,White,Ang Lee,"Crouching Tiger, Hidden Dragon",Nomination
+358,2000,Male,White,Ridley Scott,Gladiator,Nomination
+359,2000,Male,White,Steven Soderbergh,Erin Brockovich,Nomination
+360,2001,Male,White,Ron Howard,A Beautiful Mind,Winner
+361,2001,Male,White,Robert Altman,Gosford Park,Nomination
+362,2001,Male,White,Peter Jackson,The Lord of the Rings: The Fellowship of the Ring,Nomination
+363,2001,Male,White,David Lynch,Mulholland Drive,Nomination
+364,2001,Male,White,Ridley Scott,Black Hawk Down,Nomination
+365,2002,Male,White,Roman Polanski,The Pianist,Winner
+366,2002,Male,White,Pedro Almodóvar,Talk to Her,Nomination
+367,2002,Male,White,Stephen Daldry,The Hours,Nomination
+368,2002,Male,White,Rob Marshall,Chicago,Nomination
+369,2002,Male,White,Martin Scorsese,Gangs of New York,Nomination
+370,2003,Male,White,Peter Jackson,The Lord of the Rings: The Return of the King,Winner
+371,2003,Female,White,Sofia Coppola,Lost in Translation,Nomination
+372,2003,Male,White,Clint Eastwood,Mystic River,Nomination
+373,2003,Male,White,Fernando Meirelles,City of God,Nomination
+374,2003,Male,White,Peter Weir,Master and Commander: The Far Side of the World,Nomination
+375,2004,Male,White,Clint Eastwood,Million Dollar Baby,Winner
+376,2004,Male,White,Taylor Hackford,Ray,Nomination
+377,2004,Male,White,Mike Leigh,Vera Drake,Nomination
+378,2004,Male,White,Alexander Payne,Sideways,Nomination
+379,2004,Male,White,Martin Scorsese,The Aviator,Nomination
+380,2005,Male,White,Ang Lee,Brokeback Mountain,Winner
+381,2005,Male,White,George Clooney,"Good Night, and Good Luck",Nomination
+382,2005,Male,White,Paul Haggis,Crash,Nomination
+383,2005,Male,White,Bennett Miller,Capote,Nomination
+384,2005,Male,White,Steven Spielberg,Munich,Nomination
+385,2006,Male,White,Martin Scorsese,The Departed,Winner
+386,2006,Male,White,Clint Eastwood,Letters from Iwo Jima,Nomination
+387,2006,Male,White,Stephen Frears,The Queen,Nomination
+388,2006,Male,White,Paul Greengrass,United 93,Nomination
+389,2006,Male,White,Alejandro G. Iñárritu,Babel,Nomination
+390,2007,Male,White,Joel Coen and Ethan Coen,No Country for Old Men,Winner
+391,2007,Male,White,Paul Thomas Anderson,There Will Be Blood,Nomination
+392,2007,Male,White,Tony Gilroy,Michael Clayton,Nomination
+393,2007,Male,White,Jason Reitman,Juno,Nomination
+394,2007,Male,White,Julian Schnabel,The Diving Bell and the Butterfly,Nomination
+395,2008,Male,White,Danny Boyle,Slumdog Millionaire,Winner
+396,2008,Male,White,Stephen Daldry,The Reader,Nomination
+397,2008,Male,White,David Fincher,The Curious Case of Benjamin Button,Nomination
+398,2008,Male,White,Ron Howard,Frost/Nixon,Nomination
+399,2008,Male,White,Gus Van Sant,Milk,Nomination
+400,2009,Female,White,Kathryn Bigelow,The Hurt Locker,Winner
+401,2009,Male,White,James Cameron,Avatar,Nomination
+402,2009,Male,Black,Lee Daniels,Precious,Nomination
+403,2009,Male,White,Jason Reitman,Up in the Air,Nomination
+404,2009,Male,White,Quentin Tarantino,Inglourious Basterds,Nomination
+405,2010,Male,White,Tom Hooper,The King's Speech,Winner
+406,2010,Male,White,Darren Aronofsky,Black Swan,Nomination
+407,2010,Male,White,Joel Coen and Ethan Coen,True Grit,Nomination
+408,2010,Male,White,David Fincher,The Social Network,Nomination
+409,2010,Male,White,David O. Russell,The Fighter,Nomination
+410,2011,Male,White,Michel Hazanavicius,The Artist,Winner
+411,2011,Male,White,Woody Allen,Midnight in Paris,Nomination
+412,2011,Male,White,Terrence Malick,The Tree of Life,Nomination
+413,2011,Male,White,Alexander Payne,The Descendants,Nomination
+414,2011,Male,White,Martin Scorsese,Hugo,Nomination
+415,2012,Male,White,Ang Lee,Life of Pi,Winner
+416,2012,Male,White,Michael Haneke,Amour,Nomination
+417,2012,Male,White,David O. Russell,Silver Linings Playbook,Nomination
+418,2012,Male,White,Steven Spielberg,Lincoln,Nomination
+419,2012,Male,White,Benh Zeitlin,Beasts of the Southern Wild,Nomination
+420,2013,Male,White,Alfonso Cuarón,Gravity,Winner
+421,2013,Male,Black,Steve McQueen,12 Years a Slave,Nomination
+422,2013,Male,White,Alexander Payne,Nebraska,Nomination
+423,2013,Male,White,David O. Russell,American Hustle,Nomination
+424,2013,Male,White,Martin Scorsese,The Wolf of Wall Street,Nomination
+425,2014,Male,White,Alejandro G. Iñárritu,Birdman,Winner
+426,2014,Male,White,Wes Anderson,The Grand Budapest Hotel,Nomination
+427,2014,Male,White,Richard Linklater,Boyhood,Nomination
+428,2014,Male,White,Bennett Miller,Foxcatcher,Nomination
+429,2014,Male,White,Morten Tyldum,The Imitation Game,Nomination
+430,2015,Male,White,Alejandro G. Iñárritu,The Revenant,Winner
+431,2015,Male,White,Lenny Abrahamson,Room,Nomination
+432,2015,Male,White,Tom McCarthy,Spotlight,Nomination
+433,2015,Male,White,Adam McKay,The Big Short,Nomination
+434,2015,Male,White,George Miller,Mad Max: Fury Road,Nomination
+435,2016,Male,White,Damien Chazelle,La La Land,Winner
+436,2016,Male,White,Mel Gibson,Hacksaw Ridge,Nomination
+437,2016,Male,Black,Barry Jenkins,Moonlight,Nomination
+438,2016,Male,White,Kenneth Lonergan,Manchester by the Sea,Nomination
+439,2016,Male,White,Denis Villeneuve,Arrival,Nomination
+440,2017,Male,White,Guillermo del Toro,The Shape of Water,Winner
+441,2017,Male,White,Paul Thomas Anderson,Phantom Thread,Nomination
+442,2017,Female,White,Greta Gerwig,Lady Bird,Nomination
+443,2017,Male,White,Christopher Nolan,Dunkirk,Nomination
+444,2017,Male,Black,Jordan Peele,Get Out,Nomination
+445,2018,Male,White,Alfonso Cuarón,Roma,Winner
+446,2018,Male,White,Yorgos Lanthimos,The Favourite,Nomination
+447,2018,Male,Black,Spike Lee,BlacKkKlansman,Nomination
+448,2018,Male,White,Adam McKay,Vice,Nomination
+449,2018,Male,White,Paweł Pawlikowski,Cold War,Nomination
+450,2019,Male,White,Bong Joon-ho,Parasite,Winner
+451,2019,Male,White,Sam Mendes,1917,Nomination
+452,2019,Male,White,Todd Phillips,Joker,Nomination
+453,2019,Male,White,Martin Scorsese,The Irishman,Nomination
+454,2019,Male,White,Quentin Tarantino,Once Upon a Time in Hollywood,Nomination
+455,,,,,,
