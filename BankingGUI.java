@@ -17,7 +17,8 @@ public class BankingGUI implements ActionListener{
     
     JLabel labelheading,labelheading1,labelheading2, labelClientName,labelBankAccount,labelBalanceAmount,labelIssuerBank,labelCardId,labelPIN,
     labelWithdrawCardId,labelWithdrawPIN,labelWithdrawalAmount,labelDateOfWithdrawal,labelClientNameCreditCard,labelBankAccountCreditCard,
-    labelBalanceAmountCreditCard,labelIssuerBankCreditCard,labelCardIdCreditCard,labelCVCNumber,labelInterestRate,labelExpirationDate,labelCancelCreditCardId,labelCreditlimitCardId;
+    labelBalanceAmountCreditCard,labelIssuerBankCreditCard,labelCardIdCreditCard,labelCVCNumber,labelInterestRate,labelExpirationDate,
+    labelCancelCreditCardId,labelCreditlimitCardId,labelCreditlimit,labelGracePeriod;
     
     Color panelcolor,textfieldcolor,lightBlue,Montecarlo, darkgreen,lightgreen,lightRed,DarkBlue;
     
@@ -26,14 +27,14 @@ public class BankingGUI implements ActionListener{
     buttonBackCreditCard,buttonBackCancelCreditCard,buttonCancelCreditCard,buttonCancelCredit,buttonSetCreditLimit,buttonCreditLimit;  
     
     JTextField textfieldIssuerBank,textfieldClientName,textfieldBankAccount,textfieldBalanceAmount,textfieldCardId,textfieldWithdrawCardId,
-    textfieldWithdrawalAmount,textfieldIssuerBankCreditCard,textfieldClientNameCreditCard,textfieldBankAccountCreditCard,
-    textfieldCardIdCreditCard,textfieldBalanceAmountCreditCard,textfieldCVCNumber,textfieldInterestRate,textfieldCancelCreditCardId;
+    textfieldWithdrawalAmount,textfieldIssuerBankCreditCard,textfieldClientNameCreditCard,textfieldBankAccountCreditCard,textfieldSetCreditlimit,textfieldGracePeriod,
+    textfieldCardIdCreditCard,textfieldBalanceAmountCreditCard,textfieldCVCNumber,textfieldInterestRate,textfieldCancelCreditCardId,textfieldCreditlimitCardId,textfieldCreditlimit;
     
     JPasswordField textfieldPIN,textfieldWithdrawPIN;
    
     int balanceAmount,cardID,PINNumber,balanceAmountCreditCard,cardIDCreditCard,CVCNumber,cardIdWithdraw,PINNumberWithdraw,withdrawAmount,
-    PINNumberCreditCard,cardIdCancelCreditCard;
-    double InterestRate;
+    PINNumberCreditCard,cardIdCancelCreditCard, cardIdSetCreditlimit,gracePeriod;
+    double InterestRate,creditlimit;
     String issuerBank,clientName,bankAccount,issuerBankCreditCard,clientNameCreditCard,bankAccountCreditCard;
     
     ArrayList<Bankcard> BankcardArraylist = new ArrayList<Bankcard>();  
@@ -102,13 +103,11 @@ public class BankingGUI implements ActionListener{
         else if (e.getSource() == buttonBackCancelCreditCard || e.getSource() == buttonBackCreditlimit ){
             frameCreditCard.setVisible(true);
             frameCancelCreditCard.setVisible(false);
+            frameCreditlimit.setVisible(false);
             
            
         }
-        else if(e.getSource() == buttonBackCreditlimit){
-             frameCreditCard.setVisible(true);
-             frameCreditlimit.setVisible(false);
-        }
+        
         else if ( e.getSource() == buttonWithdraw){
             withdrawGUI();
             frameMain.setVisible(false);
@@ -120,6 +119,14 @@ public class BankingGUI implements ActionListener{
         }
         else if (e.getSource() == buttonClearCreditCard ){
             ClearCreditCard();
+        }
+        
+        else if(e.getSource() == buttonSetCreditLimit ){
+            setCreditLimitGUI();
+             frameCreditlimit.setVisible(true);
+            frameMain.setVisible(false);
+           frameCreditCard.setVisible(false);
+          
         }
         
         else if (e.getSource() == buttonClearWithdraw ){
@@ -158,13 +165,12 @@ public class BankingGUI implements ActionListener{
         }
         else if (e.getSource() == buttonCancelCreditCard){
             userInputCancelCreditCard();
-        }else if(e.getSource() == buttonSetCreditLimit){
-            setCreditLimitGUI();
-            frameMain.setVisible(false);
-            frameCreditCard.setVisible(false);
-            frameCreditlimit.setVisible(true);
+        }
+        else if (e.getSource() == buttonCreditLimit){
+            userInputSetCreditLimit();
             
         }
+        
    
     
        
@@ -342,6 +348,7 @@ public class BankingGUI implements ActionListener{
         textfieldCVCNumber.setText("");
         textfieldCardIdCreditCard.setText("");
         textfieldInterestRate.setText("");
+        textfieldBalanceAmountCreditCard.setText("");
      
     }
 
@@ -437,6 +444,11 @@ public class BankingGUI implements ActionListener{
             
         
         //label for withdraw GUI 
+        labelheading = new JLabel("Withdraw Amount");
+        labelheading.setBounds(290,35,400,50);
+        labelheading.setFont(new Font("Century Gothic",Font.BOLD,30));
+        labelheading.setForeground(Color.BLACK);
+        frameWithdraw.add(labelheading);
         
         labelWithdrawCardId = new JLabel("Card ID");
         labelWithdrawCardId.setBounds(20,30,68,20);
@@ -574,7 +586,7 @@ public class BankingGUI implements ActionListener{
         frameCreditCard.getContentPane().setBackground(Color.gray);
         panelCreditCard = new JPanel();
         panelcolor = new Color(172,158,157);
-        panelCreditCard.setBounds(100,150,800,600);
+        panelCreditCard.setBounds(100,130,800,600);
         panelCreditCard.setBackground(panelcolor);
         panelCreditCard.setLayout(null);
         
@@ -587,7 +599,7 @@ public class BankingGUI implements ActionListener{
         frameCreditCard.add(labelheading);
             
         labelheading2 = new JLabel("Credit Card");
-        labelheading2.setBounds(430,100,300,50);
+        labelheading2.setBounds(430,80,300,50);
         labelheading2.setFont(new Font("Century Gothic",Font.BOLD,30));
         labelheading2.setForeground(Color.BLACK);
         frameCreditCard.add(labelheading2);
@@ -785,7 +797,7 @@ public class BankingGUI implements ActionListener{
                     JOptionPane.showMessageDialog(frameDebitCard,"ERROR,Card ID already exist","Debit Card",JOptionPane.WARNING_MESSAGE);
                     return;
                 }
-                return;
+                
             }
            
             }
@@ -795,17 +807,21 @@ public class BankingGUI implements ActionListener{
        
     }
     public void displayCreditCard(){
+        int i = 0;
         for (Bankcard card1 : BankcardArraylist){
         
             if(card1 instanceof Creditcard){
-                Creditcard credit = (Creditcard) card1; 
+                Creditcard credit = (Creditcard) card1;
+                
                    String DebitCardDetail = "Clientname:   "+credit.getClient_Name()+"\n"+"Bank Account:  "
                                             +credit.getBank_Account()+"\n"+"Issuer Bank:  " + credit.getIssuer_Bank()+"\n"+
                                             "Card ID:   "+Integer.toString(credit.getCard_Id())+"\n"+"Balance Amount:   " + Integer.toString(credit.getBalance_Amount())+"\n" 
-                                            + "CvcNumber:    "+Integer.toString(credit. getCvc_Number())+"InterestRate:    "+ Double.toString(credit.getInterest_Rate());
+                                            + "CvcNumber:    "+Integer.toString(credit. getCvc_Number())+"\n"+"InterestRate:    "+ Double.toString(credit.getInterest_Rate());
                     
+                    i = i+1;
                     
                     JOptionPane.showMessageDialog(frameCreditCard,DebitCardDetail,"Debit Card",JOptionPane.INFORMATION_MESSAGE);
+                    System.out.println("S.N"+i);
                     System.out.println("Client Name:  " + credit.getClient_Name());
                     System.out.println("Bank Account:  " + credit.getBank_Account());
                     System.out.println("Issuer_bank:  " +  credit.getIssuer_Bank());
@@ -813,6 +829,7 @@ public class BankingGUI implements ActionListener{
                     System.out.println("Balance Amount:   " + credit.getBalance_Amount());
                     System.out.println("CVC Number:    "+ credit.getCvc_Number() );
                     System.out.println("Interest Rate:   "+credit.getInterest_Rate());
+                    System.out.println("\n");
                     
         }
     }
@@ -839,11 +856,10 @@ public class BankingGUI implements ActionListener{
         labelCancelCreditCardId.setBounds(220,20,68,20);
         labelCancelCreditCardId.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelCancelCreditCardId.setForeground(Color.BLACK);
-        panelCreditlimit.add(labelCancelCreditCardId);
+        panelCancelCreditCard.add(labelCancelCreditCardId);
        
             
-        
-        //Textfield for Withdraw GUI 
+         
         textfieldCancelCreditCardId = new JTextField();
         textfieldCancelCreditCardId.setBounds(220,50,270,32);
         textfieldCancelCreditCardId.setBackground(textfieldcolor);
@@ -851,7 +867,6 @@ public class BankingGUI implements ActionListener{
         panelCancelCreditCard.add(textfieldCancelCreditCardId);
         
         
-        //button for Withdraw GUI 
         buttonBackCancelCreditCard= new JButton("Back");
         buttonBackCancelCreditCard.setBounds(20,230,170,40);
         buttonBackCancelCreditCard.setFont(new Font("Century Gothic",Font.BOLD,15));
@@ -901,6 +916,9 @@ public class BankingGUI implements ActionListener{
                             JOptionPane.showMessageDialog(frameCancelCreditCard,"Your credit card has been cancelled","CancelCreditCard",JOptionPane.WARNING_MESSAGE);
                             return;
                         }
+                        else{
+                            JOptionPane.showMessageDialog(frameCancelCreditCard,"Please enter correct CardID","Cancel Credit Card",JOptionPane.WARNING_MESSAGE);
+                        }
                     }
                     
                 }
@@ -908,39 +926,70 @@ public class BankingGUI implements ActionListener{
     
     
     public void setCreditLimitGUI(){
-        frameCreditlimit = new JFrame("Cancel Credit Card");
+        frameCreditlimit = new JFrame("Set credit limit");
         frameCreditlimit.getContentPane().setBackground(Color.gray);
         panelCreditlimit = new JPanel();
-        panelCreditlimit.setBounds(140,150,700,280);
+        panelCreditlimit.setBounds(140,120,700,450);
         panelCreditlimit.setBackground(panelcolor);
         panelCreditlimit.setLayout(null);
             
         
         labelheading = new JLabel("Set Credit limit");
-        labelheading.setBounds(290,35,400,50);
+        labelheading.setBounds(350,35,400,50);
         labelheading.setFont(new Font("Century Gothic",Font.BOLD,30));
         labelheading.setForeground(Color.BLACK);
-        frameCancelCreditCard.add(labelheading);
+        frameCreditlimit.add(labelheading);
         
         labelCreditlimitCardId = new JLabel("Card ID");
-        labelCreditlimitCardId.setBounds(220,20,68,20);
+        labelCreditlimitCardId.setBounds(20,20,68,20);
         labelCreditlimitCardId.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelCreditlimitCardId.setForeground(Color.BLACK);
-        panelCancelCreditCard.add(labelCreditlimitCardId);
+        panelCreditlimit.add(labelCreditlimitCardId);
+           
+        labelCreditlimit = new JLabel("Credit limit");
+        labelCreditlimit.setBounds(400,20,88,20);
+        labelCreditlimit.setFont(new Font("Century Gothic",Font.BOLD,17));
+        labelCreditlimit.setForeground(Color.BLACK);
+        panelCreditlimit.add(labelCreditlimit);
+        
+        labelGracePeriod = new JLabel("Grace Period");
+        labelGracePeriod.setBounds(20,130,150,20);
+        labelGracePeriod.setFont(new Font("Century Gothic",Font.BOLD,17));
+        labelGracePeriod.setForeground(Color.BLACK);
+        panelCreditlimit.add(labelGracePeriod);
+        
        
-            
+       
+        textfieldCreditlimitCardId = new JTextField();
+        textfieldCreditlimitCardId .setBounds(20,50,270,32);
+        textfieldCreditlimitCardId .setBackground(textfieldcolor);
+        textfieldCreditlimitCardId .setFont(new Font("Century Gothic",Font.BOLD,14));
+        panelCreditlimit.add(textfieldCreditlimitCardId);
         
-        //Textfield for Withdraw GUI 
-        textfieldCancelCreditCardId = new JTextField();
-        textfieldCancelCreditCardId.setBounds(220,50,270,32);
-        textfieldCancelCreditCardId.setBackground(textfieldcolor);
-        textfieldCancelCreditCardId.setFont(new Font("Century Gothic",Font.BOLD,14));
-        panelCancelCreditCard.add(textfieldCancelCreditCardId);
+        textfieldCreditlimit = new JTextField();
+        textfieldCreditlimit.setBounds(400,50,270,32);
+        textfieldCreditlimit.setBackground(textfieldcolor);
+        textfieldCreditlimit.setFont(new Font("Century Gothic",Font.BOLD,14));
+        panelCreditlimit.add(textfieldCreditlimit);
         
         
-        //button for Withdraw GUI 
+        
+        textfieldGracePeriod = new JTextField();
+        textfieldGracePeriod.setBounds(20,160,270,32);
+        textfieldGracePeriod.setBackground(textfieldcolor);
+        textfieldGracePeriod.setFont(new Font("Century Gothic",Font.BOLD,14));
+        panelCreditlimit.add(textfieldGracePeriod);
+        
+        
+        
+        
+        
+        
+        
+        
+        
         buttonBackCreditlimit = new JButton("Back");
-        buttonBackCreditlimit.setBounds(20,230,170,40);
+        buttonBackCreditlimit.setBounds(20,400,170,40);
         buttonBackCreditlimit.setFont(new Font("Century Gothic",Font.BOLD,15));
         buttonBackCreditlimit.setForeground(Color.BLACK);
         buttonBackCreditlimit.setBackground(lightRed);
@@ -949,12 +998,12 @@ public class BankingGUI implements ActionListener{
         panelCreditlimit.add(buttonBackCreditlimit);
             
     
-        Color maron = new Color(255,75,75);
+        lightBlue = new Color(70, 129, 244);
         buttonCreditLimit = new JButton("Set Credit Limit");
-        buttonCreditLimit.setBounds(220,140,300,60);
+        buttonCreditLimit.setBounds(250,300,250,60);
         buttonCreditLimit.setFont(new Font("Century Gothic",Font.BOLD,17));
         buttonCreditLimit.setForeground(Color.BLACK);
-        buttonCreditLimit.setBackground(maron);
+        buttonCreditLimit.setBackground(lightBlue);
         buttonCreditLimit.setFocusable(false);
         buttonCreditLimit.addActionListener(this);
         panelCreditlimit.add(buttonCreditLimit);
@@ -962,11 +1011,45 @@ public class BankingGUI implements ActionListener{
         frameCreditlimit.add(panelCreditlimit);
         frameCreditlimit.setBounds(200,0,1000,800); //setting position and size of frame
         frameCreditlimit.setLayout(null);
-        frameCreditlimit.setVisible(false);
-        frameCreditlimit.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frameCreditlimit.setVisible(true);
+        //frameCreditlimit.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        
         
         
+        
+        
+        
+        
+    }
+    public void userInputSetCreditLimit(){
+        try{
+            cardIdSetCreditlimit = Integer.parseInt(textfieldCreditlimitCardId.getText());
+            gracePeriod = Integer.parseInt(textfieldGracePeriod.getText());
+            creditlimit = Double.parseDouble(textfieldCreditlimit.getText());
+        }catch(NumberFormatException e ){
+              JOptionPane.showMessageDialog(frameCreditlimit,"Please enter valid data","Set Credit Limit",JOptionPane.WARNING_MESSAGE);
+            
+            
+        }
+        
+        for(Bankcard card : BankcardArraylist){
+            if(card instanceof Creditcard){
+                Creditcard credit = (Creditcard) card; 
+                if(cardIdSetCreditlimit == card.getCard_Id()){
+                    
+                    credit.setCredit_Limit(creditlimit,gracePeriod);
+                    String creditlimitdetail = "Card ID :  " + credit.getCard_Id()+ "\n" +"Credit Limit :   "+ credit.getCredit_Limit()+ "\n" + "Grace Period :   "+ credit.getGrace_Period() ;
+                   JOptionPane.showMessageDialog(frameCreditlimit,creditlimitdetail,"Set Credit Limit",JOptionPane.WARNING_MESSAGE);
+                   return; 
+                }
+                else{
+                    JOptionPane.showMessageDialog(frameCreditlimit,"Incorrect Card ID","Set Credit Limit",JOptionPane.WARNING_MESSAGE);
+                }
+                
+                
+            }
+            
+        }
         
         
         
