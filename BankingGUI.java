@@ -11,14 +11,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 
+// BankingGUI class implements the ActionListener 
 public class BankingGUI implements ActionListener{
     JFrame frameMain,frameDebitCard,frameWithdraw,frameCreditCard,frameCancelCreditCard,frameCreditlimit;
-    JPanel panelDebitCard,panelWithdraw,panelCreditCard,panelCancelCreditCard,panelSetCreditLimit,panelCreditlimit;
+    JPanel panelDebitCard,panelWithdraw,panelCreditCard,panelCancelCreditCard,panelCreditlimit;
     
-    JLabel labelheading,labelheading1,labelheading2, labelClientName,labelBankAccount,labelBalanceAmount,labelIssuerBank,labelCardId,labelPIN,
-    labelWithdrawCardId,labelWithdrawPIN,labelWithdrawalAmount,labelDateOfWithdrawal,labelClientNameCreditCard,labelBankAccountCreditCard,
-    labelBalanceAmountCreditCard,labelIssuerBankCreditCard,labelCardIdCreditCard,labelCVCNumber,labelInterestRate,labelExpirationDate,
-    labelCancelCreditCardId,labelCreditlimitCardId,labelCreditlimit,labelGracePeriod;
+    
     
     Color panelcolor,textfieldcolor,lightBlue,Montecarlo, darkgreen,lightgreen,lightRed,DarkBlue;
     
@@ -31,33 +29,33 @@ public class BankingGUI implements ActionListener{
     textfieldCardIdCreditCard,textfieldBalanceAmountCreditCard,textfieldCVCNumber,textfieldInterestRate,textfieldCancelCreditCardId,textfieldCreditlimitCardId,textfieldCreditlimit;
     
     JPasswordField textfieldPIN,textfieldWithdrawPIN;
+    JComboBox withdrawYear,withdrawMonth,withdrawDay, expirationYear,expirationMonth,expirationDaP ;
+    ArrayList<Bankcard> BankcardArraylist;
    
     int balanceAmount,cardID,PINNumber,balanceAmountCreditCard,cardIDCreditCard,CVCNumber,cardIdWithdraw,PINNumberWithdraw,withdrawAmount,
     PINNumberCreditCard,cardIdCancelCreditCard, cardIdSetCreditlimit,gracePeriod;
     double InterestRate,creditlimit;
-    String issuerBank,clientName,bankAccount,issuerBankCreditCard,clientNameCreditCard,bankAccountCreditCard;
+   
     
-    ArrayList<Bankcard> BankcardArraylist = new ArrayList<Bankcard>();  
+     
     
     public BankingGUI(){
-        
+        BankcardArraylist = new ArrayList<Bankcard>(); 
         frameMain = new JFrame("sajin bank");
         frameMain.getContentPane().setBackground(Color.gray);
-        
-        labelheading1 = new JLabel("Welcome!!!");
+        JLabel labelheading1 = new JLabel("Welcome!!!");
         labelheading1.setBounds(360,65,400,50);
         labelheading1.setFont(new Font("Century Gothic",Font.BOLD,60));
         labelheading1.setForeground(Color.BLACK);
         frameMain.add(labelheading1);
         
-        labelheading = new JLabel("Our Services");
+        JLabel labelheading = new JLabel("Our Services");
         labelheading.setBounds(390,165,400,50);
         labelheading.setFont(new Font("Century Gothic",Font.BOLD,30));
         labelheading.setForeground(Color.BLACK);
         frameMain.add(labelheading);
         
         DarkBlue = new Color(56, 155, 242);
-    
         buttonDebitCard = new JButton("Debit Card");
         buttonDebitCard.setBounds(360,265,300,70);
         buttonDebitCard.setFont(new Font("Century Gothic",Font.BOLD,19));
@@ -100,7 +98,7 @@ public class BankingGUI implements ActionListener{
             frameDebitCard.setVisible(false);
             frameCreditCard.setVisible(false);
         }
-        else if (e.getSource() == buttonBackCancelCreditCard || e.getSource() == buttonBackCreditlimit ){
+        else if (e.getSource() == buttonBackCancelCreditCard || e.getSource() == buttonBackCreditlimit  ){
             frameCreditCard.setVisible(true);
             frameCancelCreditCard.setVisible(false);
             frameCreditlimit.setVisible(false);
@@ -115,10 +113,10 @@ public class BankingGUI implements ActionListener{
             frameWithdraw.setVisible(true);
         }
         else if (e.getSource() == buttonClearDebitCard  ){
-            ClearDebitCard();
+            clearDebitCard();
         }
         else if (e.getSource() == buttonClearCreditCard ){
-            ClearCreditCard();
+            clearCreditCard();
         }
         
         else if(e.getSource() == buttonSetCreditLimit ){
@@ -140,7 +138,7 @@ public class BankingGUI implements ActionListener{
             frameCreditCard.setVisible(true);
         }
         else if(e.getSource() == buttonAddDebitCard){
-            UserInputDebitCard();
+            userInputDebitCard();
             
         }
         else if(e.getSource() == buttonCancelCredit){
@@ -188,51 +186,51 @@ public class BankingGUI implements ActionListener{
             panelDebitCard.setLayout(null);
             
             
-            labelheading = new JLabel("Sajin Bank");
+            JLabel labelheading = new JLabel("Sajin Bank");
             labelheading.setBounds(400,10,300,50);
             labelheading.setFont(new Font("Century Gothic",Font.BOLD,40));
             labelheading.setForeground(Color.BLACK);
             frameDebitCard.add(labelheading);
             
-            labelheading2 = new JLabel("Debit Card");
+            JLabel labelheading2 = new JLabel("Debit Card");
             labelheading2.setBounds(430,100,300,50);
             labelheading2.setFont(new Font("Century Gothic",Font.BOLD,30));
             labelheading2.setForeground(Color.BLACK);
             frameDebitCard.add(labelheading2);
             
-            labelClientName = new JLabel("Client Name");
+            JLabel labelClientName = new JLabel("Client Name");
             labelClientName.setBounds(15,30,120,20);
             labelClientName.setFont(new Font("Century Gothic",Font.BOLD,17));
             labelClientName.setForeground(Color.BLACK);
             panelDebitCard.add(labelClientName);
             
-            labelBankAccount = new JLabel("Bank Account");
+            JLabel labelBankAccount = new JLabel("Bank Account");
             labelBankAccount.setBounds(15,130,120,20);
             labelBankAccount.setFont(new Font("Century Gothic",Font.BOLD,17));
             labelBankAccount.setForeground(Color.BLACK);
             panelDebitCard.add(labelBankAccount);
             
-            labelBalanceAmount = new JLabel("Balance Amount");
+            JLabel labelBalanceAmount = new JLabel("Balance Amount");
             labelBalanceAmount.setBounds(15,240,140,20);
             labelBalanceAmount.setFont(new Font("Century Gothic",Font.BOLD,17));
             labelBalanceAmount.setForeground(Color.BLACK);
             panelDebitCard.add(labelBalanceAmount);
             
-            labelIssuerBank = new JLabel("Issuer Bank");
+            JLabel labelIssuerBank = new JLabel("Issuer Bank");
             labelIssuerBank.setBounds(480,30,140,20);
             labelIssuerBank.setFont(new Font("Century Gothic",Font.BOLD,17));
             labelIssuerBank.setForeground(Color.BLACK);
             panelDebitCard.add(labelIssuerBank);
             
             
-            labelCardId = new JLabel("Card ID");
+            JLabel labelCardId = new JLabel("Card ID");
             labelCardId.setBounds(480,130,68,20);
             labelCardId.setFont(new Font("Century Gothic",Font.BOLD,17));
             labelCardId.setForeground(Color.BLACK);
             panelDebitCard.add(labelCardId);
             
             
-            labelPIN =  new JLabel("PIN Number");
+            JLabel labelPIN =  new JLabel("PIN Number");
             labelPIN.setBounds(480,240,100,20);
             labelPIN.setFont(new Font("Century Gothic",Font.BOLD,17));
             labelPIN.setForeground(Color.BLACK);
@@ -341,7 +339,7 @@ public class BankingGUI implements ActionListener{
     
     
     }
-    public void ClearCreditCard(){
+    public void clearCreditCard(){
         textfieldClientNameCreditCard.setText("");
         textfieldIssuerBankCreditCard.setText("");
         textfieldBankAccountCreditCard.setText("");
@@ -352,7 +350,7 @@ public class BankingGUI implements ActionListener{
      
     }
 
-    public void ClearDebitCard(){
+    public void clearDebitCard(){
         textfieldClientName.setText("");
         textfieldIssuerBank.setText("");
         textfieldBankAccount.setText("");
@@ -363,7 +361,7 @@ public class BankingGUI implements ActionListener{
     }
     
     
-    public  void UserInputDebitCard(){
+    public  void userInputDebitCard(){
         String issuerBank = textfieldIssuerBank.getText(); 
         String clientName = textfieldClientName.getText();
         String bankAccount = textfieldBankAccount.getText();
@@ -396,12 +394,6 @@ public class BankingGUI implements ActionListener{
             JOptionPane.showMessageDialog(frameDebitCard,"Debitcard added sucessfully");
         }
         }
-        
-            
-                   
-        
-        
-    
     
     public void displayDebitCard(){
     for (Bankcard card : BankcardArraylist){
@@ -415,11 +407,7 @@ public class BankingGUI implements ActionListener{
                 
                 
                 JOptionPane.showMessageDialog(frameDebitCard,DebitCardDetail,"Debit Card",JOptionPane.INFORMATION_MESSAGE);
-                System.out.println("Client Name:  " + debit.getClient_Name());
-                System.out.println("Bank Account:  " + debit.getBank_Account());
-                System.out.println("Issuer_bank:  " +  debit.getIssuer_Bank());
-                System.out.println("Card ID:  " + debit.getCard_Id());
-                System.out.println("");
+                debit.display();
                 
         }
        
@@ -444,36 +432,58 @@ public class BankingGUI implements ActionListener{
             
         
         //label for withdraw GUI 
-        labelheading = new JLabel("Withdraw Amount");
+        JLabel labelheading = new JLabel("Withdraw Amount");
         labelheading.setBounds(290,35,400,50);
         labelheading.setFont(new Font("Century Gothic",Font.BOLD,30));
         labelheading.setForeground(Color.BLACK);
         frameWithdraw.add(labelheading);
         
-        labelWithdrawCardId = new JLabel("Card ID");
+        JLabel labelWithdrawCardId = new JLabel("Card ID");
         labelWithdrawCardId.setBounds(20,30,68,20);
         labelWithdrawCardId.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelWithdrawCardId.setForeground(Color.BLACK);
         panelWithdraw.add(labelWithdrawCardId);
        
             
-        labelWithdrawPIN =  new JLabel("PIN Number");
+        JLabel labelWithdrawPIN =  new JLabel("PIN Number");
         labelWithdrawPIN.setBounds(20,120,100,20);
         labelWithdrawPIN.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelWithdrawPIN.setForeground(Color.BLACK);
         panelWithdraw.add(labelWithdrawPIN);
         
-        labelWithdrawalAmount =  new JLabel("Withdrawal Amount");
+        JLabel labelWithdrawalAmount =  new JLabel("Withdrawal Amount");
         labelWithdrawalAmount.setBounds(430,30,240,20);
         labelWithdrawalAmount.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelWithdrawalAmount.setForeground(Color.BLACK);
         panelWithdraw.add(labelWithdrawalAmount);
         
-        labelDateOfWithdrawal = new JLabel("Date Of Withdrawal");
+        JLabel labelDateOfWithdrawal = new JLabel("Date Of Withdrawal");
         labelDateOfWithdrawal.setBounds(430,120,300,20);
         labelDateOfWithdrawal.setFont(new Font("Century Gothic",Font.BOLD,17)); 
         labelDateOfWithdrawal.setForeground(Color.BLACK);
         panelWithdraw.add(labelDateOfWithdrawal);
+        
+        String withdrawyear[]= {"2015","2016","2017","2018","2019","2020","2021","2022","2023","2024"};
+        String withdrawmonth[] = {"Janauary","Feburary","March","April","May","June","July","August","September","October","November","December"};
+        String[] withdrawday = new String[31] ;
+        for (int i = 0; i < 31; i++) {
+            withdrawday[i] = Integer.toString(i + 1);
+        }
+        
+        withdrawYear = new JComboBox(withdrawyear);
+        withdrawMonth = new JComboBox(withdrawmonth);
+        withdrawDay = new JComboBox(withdrawday);
+        withdrawYear.setBounds(430,140,70,30);
+        withdrawMonth.setBounds(520,140,90,30);
+        withdrawDay.setBounds(630,140,70,30);
+        panelWithdraw.add(withdrawYear);
+        panelWithdraw.add(withdrawMonth);
+        panelWithdraw.add(withdrawDay);
+        
+        
+        
+        
+        
         
         //Textfield for Withdraw GUI 
         textfieldWithdrawCardId = new JTextField();
@@ -535,7 +545,7 @@ public class BankingGUI implements ActionListener{
         
     }
     public void userInputWithdrawAmount(){
-        String date ="";
+        String date =withdrawYear.getSelectedItem()+"/"+withdrawMonth.getSelectedItem()+"/"+withdrawDay.getSelectedItem();
         
         if(textfieldWithdrawCardId.getText().isEmpty()||textfieldWithdrawPIN.getText().isEmpty()||textfieldWithdrawalAmount.getText().isEmpty()){
              JOptionPane.showMessageDialog(frameWithdraw,"Please enter all information","Withdraw",JOptionPane.WARNING_MESSAGE);  
@@ -559,7 +569,7 @@ public class BankingGUI implements ActionListener{
                                  String withdraw = "Clientname:   "+debit.getClient_Name()+"\n"+"Bank Account:  "
                                         +debit.getBank_Account()+"\n"+"Issuer Bank:  " + debit.getIssuer_Bank()+"\n"+
                                         "Card ID:   "+Integer.toString(debit.getCard_Id())+"\n"+"Balance Amount:   " + Integer.toString(debit.getBalance_Amount())+"\n" 
-                                         +"Withdrawal Amount:  "+ Integer.toString(withdrawAmount) ;
+                                         +"Withdrawal Amount:  "+ Integer.toString(withdrawAmount)+"\nDate of Withdrawl " + debit.getDate_Of_Withdrawal() ;
                              
                                  JOptionPane.showMessageDialog(frameWithdraw,withdraw,"Withdraw",JOptionPane.INFORMATION_MESSAGE);   
                             
@@ -592,56 +602,56 @@ public class BankingGUI implements ActionListener{
         
       
         //label for Credit Card GUI 
-        labelheading = new JLabel("Sajin Bank");
+        JLabel labelheading = new JLabel("Sajin Bank");
         labelheading.setBounds(400,10,300,50);
         labelheading.setFont(new Font("Century Gothic",Font.BOLD,40));
         labelheading.setForeground(Color.BLACK);
         frameCreditCard.add(labelheading);
             
-        labelheading2 = new JLabel("Credit Card");
+        JLabel labelheading2 = new JLabel("Credit Card");
         labelheading2.setBounds(430,80,300,50);
         labelheading2.setFont(new Font("Century Gothic",Font.BOLD,30));
         labelheading2.setForeground(Color.BLACK);
         frameCreditCard.add(labelheading2);
             
-        labelClientNameCreditCard = new JLabel("Client Name");
+        JLabel labelClientNameCreditCard = new JLabel("Client Name");
         labelClientNameCreditCard.setBounds(15,30,120,20);
         labelClientNameCreditCard.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelClientNameCreditCard.setForeground(Color.BLACK);
         panelCreditCard.add(labelClientNameCreditCard);
             
-        labelBankAccountCreditCard = new JLabel("Bank Account");
+        JLabel labelBankAccountCreditCard = new JLabel("Bank Account");
         labelBankAccountCreditCard.setBounds(15,130,120,20);
         labelBankAccountCreditCard.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelBankAccountCreditCard.setForeground(Color.BLACK);
         panelCreditCard.add(labelBankAccountCreditCard);
             
-        labelBalanceAmountCreditCard = new JLabel("Balance Amount");
+        JLabel labelBalanceAmountCreditCard = new JLabel("Balance Amount");
         labelBalanceAmountCreditCard.setBounds(15,240,140,20);
         labelBalanceAmountCreditCard.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelBalanceAmountCreditCard.setForeground(Color.BLACK);
         panelCreditCard.add(labelBalanceAmountCreditCard);
             
-        labelIssuerBankCreditCard = new JLabel("Issuer Bank");
+        JLabel labelIssuerBankCreditCard = new JLabel("Issuer Bank");
         labelIssuerBankCreditCard.setBounds(480,30,140,20);
         labelIssuerBankCreditCard.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelIssuerBankCreditCard.setForeground(Color.BLACK);
         panelCreditCard.add(labelIssuerBankCreditCard);
             
             
-        labelCardIdCreditCard = new JLabel("Card ID");
+        JLabel labelCardIdCreditCard = new JLabel("Card ID");
         labelCardIdCreditCard.setBounds(480,130,68,20);
         labelCardIdCreditCard.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelCardIdCreditCard.setForeground(Color.BLACK);
         panelCreditCard.add(labelCardIdCreditCard);
         
-        labelCVCNumber = new JLabel("CVC Number");
+        JLabel labelCVCNumber = new JLabel("CVC Number");
         labelCVCNumber.setBounds(480,240,130,20);
         labelCVCNumber.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelCVCNumber.setForeground(Color.BLACK);
         panelCreditCard.add(labelCVCNumber);
         
-        labelInterestRate = new JLabel("Interest Rate");
+        JLabel labelInterestRate = new JLabel("Interest Rate");
         labelInterestRate.setBounds(15,330,130,20);
         labelInterestRate.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelInterestRate.setForeground(Color.BLACK);
@@ -818,18 +828,10 @@ public class BankingGUI implements ActionListener{
                                             "Card ID:   "+Integer.toString(credit.getCard_Id())+"\n"+"Balance Amount:   " + Integer.toString(credit.getBalance_Amount())+"\n" 
                                             + "CvcNumber:    "+Integer.toString(credit. getCvc_Number())+"\n"+"InterestRate:    "+ Double.toString(credit.getInterest_Rate());
                     
-                    i = i+1;
+                  
                     
                     JOptionPane.showMessageDialog(frameCreditCard,DebitCardDetail,"Debit Card",JOptionPane.INFORMATION_MESSAGE);
-                    System.out.println("S.N"+i);
-                    System.out.println("Client Name:  " + credit.getClient_Name());
-                    System.out.println("Bank Account:  " + credit.getBank_Account());
-                    System.out.println("Issuer_bank:  " +  credit.getIssuer_Bank());
-                    System.out.println("Card ID:  " + credit.getCard_Id());
-                    System.out.println("Balance Amount:   " + credit.getBalance_Amount());
-                    System.out.println("CVC Number:    "+ credit.getCvc_Number() );
-                    System.out.println("Interest Rate:   "+credit.getInterest_Rate());
-                    System.out.println("\n");
+                    credit.display();
                     
         }
     }
@@ -846,13 +848,13 @@ public class BankingGUI implements ActionListener{
         panelCancelCreditCard.setLayout(null);
             
         
-        labelheading = new JLabel("Cancel Your Credit Card");
+        JLabel labelheading = new JLabel("Cancel Your Credit Card");
         labelheading.setBounds(290,35,400,50);
         labelheading.setFont(new Font("Century Gothic",Font.BOLD,30));
         labelheading.setForeground(Color.BLACK);
         frameCancelCreditCard.add(labelheading);
         
-        labelCancelCreditCardId = new JLabel("Card ID");
+        JLabel labelCancelCreditCardId = new JLabel("Card ID");
         labelCancelCreditCardId.setBounds(220,20,68,20);
         labelCancelCreditCardId.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelCancelCreditCardId.setForeground(Color.BLACK);
@@ -934,25 +936,25 @@ public class BankingGUI implements ActionListener{
         panelCreditlimit.setLayout(null);
             
         
-        labelheading = new JLabel("Set Credit limit");
+        JLabel labelheading = new JLabel("Set Credit limit");
         labelheading.setBounds(350,35,400,50);
         labelheading.setFont(new Font("Century Gothic",Font.BOLD,30));
         labelheading.setForeground(Color.BLACK);
         frameCreditlimit.add(labelheading);
         
-        labelCreditlimitCardId = new JLabel("Card ID");
+        JLabel labelCreditlimitCardId = new JLabel("Card ID");
         labelCreditlimitCardId.setBounds(20,20,68,20);
         labelCreditlimitCardId.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelCreditlimitCardId.setForeground(Color.BLACK);
         panelCreditlimit.add(labelCreditlimitCardId);
            
-        labelCreditlimit = new JLabel("Credit limit");
+        JLabel labelCreditlimit = new JLabel("Credit limit");
         labelCreditlimit.setBounds(400,20,88,20);
         labelCreditlimit.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelCreditlimit.setForeground(Color.BLACK);
         panelCreditlimit.add(labelCreditlimit);
         
-        labelGracePeriod = new JLabel("Grace Period");
+        JLabel labelGracePeriod = new JLabel("Grace Period");
         labelGracePeriod.setBounds(20,130,150,20);
         labelGracePeriod.setFont(new Font("Century Gothic",Font.BOLD,17));
         labelGracePeriod.setForeground(Color.BLACK);
@@ -979,11 +981,6 @@ public class BankingGUI implements ActionListener{
         textfieldGracePeriod.setBackground(textfieldcolor);
         textfieldGracePeriod.setFont(new Font("Century Gothic",Font.BOLD,14));
         panelCreditlimit.add(textfieldGracePeriod);
-        
-        
-        
-        
-        
         
         
         
