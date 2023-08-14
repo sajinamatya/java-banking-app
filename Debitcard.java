@@ -4,7 +4,7 @@
  * Write a description of class Debitcard here.
  *
  * @author (sajinamatya)
- * @version (a version number or a date)
+ * @version (1)
  */
 public class Debitcard extends Bankcard  //subclass Debitcard is created which inherit the property of Bankcard
 {
