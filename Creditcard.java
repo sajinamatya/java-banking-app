@@ -2,7 +2,7 @@
 /**
  * Write a description of class Creditcard here.
  *
- * @author (your name)
+ * @author (sajin)
  * @version (a version number or a date)
  */
 public class Creditcard extends Bankcard  // child class credit card which inherit the properties of Bankcard class 
